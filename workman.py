@@ -1,4 +1,5 @@
 # workman 1.0.0 for python 3.0.0 +
+#-------------------------------------------------------------------------
 import sys
 from time import *
 import os
@@ -12,6 +13,8 @@ print("forget = delete the entire manager (not packages)")
 print("-------------------")
 print("install: installs packages, on prompt type the EXACT PACKAGE NAME!")
 print("uninstall: deletes the package ZIP")
+print("-------------------")
+print("config")
 
 cli = input("workman>> ")
 
@@ -50,3 +53,13 @@ if cli == "uninstall":
   uninstall = input("uninstall: ")
   
   os.remove(uninstall + ".zip")
+  
+#----------------------------------------------------------------------------
+# config
+
+if cli == "config":
+  os.system("clear")
+  print("--------config----------")
+  
+  
+#-----------------------------------------------------------------------------
