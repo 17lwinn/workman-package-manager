@@ -2,7 +2,7 @@
 import sys
 from time import *
 import os
-import zipfile
+from zipfile import ZipFile
 
 print("WORKMAN PACKAGE MANAGER FOR PYTHON")
 print("----------------------------------")
@@ -41,4 +41,7 @@ if cli == "install":
   os.system("wget https://workman-source.glitch.me/" + install + ".zip")
   print("decompressing " + install)
   sleep(2)
-  sys.exit("\033[1;31mDue to technical issues, you will have to manually extract the zip file. Fix will be brought in the next update\033[1;m")
+  with ZipFile(install + '.zip', 'r') as zipObj:
+   # Extract all the contents of zip file in current directory
+   zipObj.extractall()
+  print("done. installed " + install + "successfully")
