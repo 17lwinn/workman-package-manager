@@ -4,6 +4,7 @@ from sys import argv, dont_write_bytecode
 dont_write_bytecode = True
 from time import *
 import os
+import zipfile
 
 print("WORKMAN PACKAGE MANAGER FOR PYTHON")
 print("----------------------------------")
@@ -40,6 +41,6 @@ if cli == "install":
   install = input("install: ")
   
   os.system("wget https://workman-source.glitch.me/" + install + ".zip")
-  print("decompressing" + install)
+  print("decompressing " + install)
   sleep(2)
-  os.system("unzip" + install + ".zip")
+  
