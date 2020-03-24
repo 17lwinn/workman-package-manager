@@ -1,7 +1,5 @@
 # workman 1.0.0 for python 3.0.0 +
-
-from sys import argv, dont_write_bytecode
-dont_write_bytecode = True
+import sys
 from time import *
 import os
 import zipfile
@@ -43,4 +41,4 @@ if cli == "install":
   os.system("wget https://workman-source.glitch.me/" + install + ".zip")
   print("decompressing " + install)
   sleep(2)
-  
+  sys.exit("\033[1;31mDue to technical issues, you will have to manually extract the zip file. Fix will be brought in the next update\033[1;m")
