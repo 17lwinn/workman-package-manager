@@ -40,3 +40,6 @@ if cli == "install":
   install = input("install: ")
   
   os.system("wget https://workman-source.glitch.me/" + install + ".zip")
+  print("decompressing" + install)
+  sleep(2)
+  os.system("unzip" + install + ".zip")
