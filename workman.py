@@ -8,14 +8,13 @@ from zipfile import ZipFile
 
 print("WORKMAN PACKAGE MANAGER FOR PYTHON")
 print("----------------------------------")
+print("exit = exits manager")
 print("version = version info")
 print("creators = creator info")
 print("forget = delete the entire manager (not packages)")
 print("-------------------")
 print("install: installs packages, on prompt type the EXACT PACKAGE NAME!")
 print("uninstall: deletes the package ZIP")
-print("-------------------")
-print("config: configure workman")
 
 cli = input("workman>> ")
 
@@ -37,6 +36,9 @@ if cli == "forget": # deletes this manager
   if forget ==  "N":
     os.system("python3 workman.py")
     
+if cli == "exit":
+  sys.exit("exited, no problems found")
+    
 # package management ----------------------------------------------------------
 
 if cli == "install":
@@ -54,12 +56,10 @@ if cli == "uninstall":
   uninstall = input("uninstall: ")
   
   os.remove(uninstall + ".zip")
+
   
 #----------------------------------------------------------------------------
 # config
 
-if cli == "config":
-  os.system("clear")
-  print("--------config----------")
-  
+
 #-----------------------------------------------------------------------------
