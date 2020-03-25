@@ -15,7 +15,7 @@ print("-------------------")
 print("install: installs packages, on prompt type the EXACT PACKAGE NAME!")
 print("uninstall: deletes the package ZIP")
 print("-------------------")
-print("config")
+print("config: configure workman")
 
 cli = input("workman>> ")
 
@@ -61,6 +61,5 @@ if cli == "uninstall":
 if cli == "config":
   os.system("clear")
   print("--------config----------")
-  
   
 #-----------------------------------------------------------------------------
