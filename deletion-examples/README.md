@@ -8,4 +8,4 @@ uninstall your package- and it'll be rejected
 
 -------------
 
-they MUST be in a folder which is called the package name
+they MUST be in a folder which is called the package name eg. xent/uninstall.py
