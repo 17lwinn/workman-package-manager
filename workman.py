@@ -41,8 +41,8 @@ if cli == "exit":
     
 # package management ----------------------------------------------------------
 
-if cli == "install":
-  install = input("install: ")
+if cli == "install": 
+  install = input("install: ") # installation scripts
   
   os.system("wget https://workman-source.glitch.me/" + install + ".zip")
   print("decompressing " + install)
@@ -53,7 +53,7 @@ if cli == "install":
   print("done. installed " + install + "successfully")
   
 if cli == "uninstall":
-  uninstall = input("uninstall: ")
+  uninstall = input("uninstall: ")  # uninstallation scripts
   os.system(uninstall + "/uninstall.py")
   
 #----------------------------------------------------------------------------
