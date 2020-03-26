@@ -54,9 +54,7 @@ if cli == "install":
   
 if cli == "uninstall":
   uninstall = input("uninstall: ")
-  
-  os.remove(uninstall + ".zip")
-
+  os.system(uninstall + "/uninstall.py")
   
 #----------------------------------------------------------------------------
 # config
