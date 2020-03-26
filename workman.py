@@ -14,7 +14,7 @@ print("creators = creator info")
 print("forget = delete the entire manager (not packages)")
 print("-------------------")
 print("install: installs packages, on prompt type the EXACT PACKAGE NAME!")
-print("uninstall: deletes the package ZIP")
+print("uninstall: deletes the package")
 
 cli = input("workman>> ")
 
@@ -50,7 +50,7 @@ if cli == "install":
   with ZipFile(install + '.zip', 'r') as zipObj:
    # Extract all the contents of zip file in current directory
    zipObj.extractall()
-  print("done. installed " + install + "successfully")
+  print("done. installed  " + install + "successfully")
   
 if cli == "uninstall":
   uninstall = input("uninstall: ")  # uninstallation scripts
