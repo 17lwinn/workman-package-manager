@@ -55,7 +55,6 @@ if cli == "install":
 if cli == "uninstall":
   uninstall = input("uninstall: ")  # uninstallation scripts
   os.system(uninstall + "/uninstall.py")
-  
 #----------------------------------------------------------------------------
 # config
 
