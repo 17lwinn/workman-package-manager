@@ -15,6 +15,7 @@ print("forget = delete the entire manager (not packages)")
 print("-------------------")
 print("install: installs packages, on prompt type the EXACT PACKAGE NAME!")
 print("uninstall: deletes the package")
+print("quote: prints an all important quote")
 
 cli = input("workman>> ")
 
@@ -55,8 +56,9 @@ if cli == "install":
 if cli == "uninstall":
   uninstall = input("uninstall: ")  # uninstallation scripts
   os.system(uninstall + "/uninstall.py")
-#----------------------------------------------------------------------------
-# config
 
-
-#-----------------------------------------------------------------------------
+  # hmmm, what next?
+  
+if cli == "quote":
+  print("thats the best thing about dying, you can run any risk you want.")
+  print("Guy Montag- fahrenheit 451")
