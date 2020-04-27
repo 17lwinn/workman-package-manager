@@ -1,0 +1,1 @@
+alias workman='python3 workman.py'
