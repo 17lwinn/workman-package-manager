@@ -3,8 +3,11 @@
 import sys
 from time import *
 import os
+from configparser import ConfigParser
 from zipfile import ZipFile
+import subprocess
 
+config = ConfigParser()
 
 print("WORKMAN PACKAGE MANAGER FOR PYTHON")
 print("----------------------------------")
@@ -39,6 +42,13 @@ if cli == "forget": # deletes this manager
     
 if cli == "exit":
   sys.exit("exited, no problems found")
+  
+if cli == "config url":
+  parser = ConfigParser()
+  parser.read('workman.ini')
+
+  url = input("new URL> ")
+  config.set("workman_url", "url", url)
     
 # package management ----------------------------------------------------------
 
@@ -60,5 +70,5 @@ if cli == "uninstall":
   # hmmm, what next?
   
 if cli == "quote":
-  print("thats the best thing about dying, you can run any risk you want.")
-  print("Guy Montag- fahrenheit 451")
+  print("a man with the questions is king, but a man with all the answers is god")
+  print("Paddy Spooner- Quiz")
