@@ -1,7 +1,7 @@
 FROM gitpod/workspace-full
 
 ## Avoid using 'root', as it's bad for your dev environments!
-ROOT gitpod
+root gitpod
 
 ## Install Python 3.8.x
 # RUN pyenv install 3.8.2
